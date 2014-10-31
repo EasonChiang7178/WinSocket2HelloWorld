@@ -1,21 +1,41 @@
-﻿Build started 2014/10/30 下午 11:53:37.
-     1>Project "C:\Users\Shu\Desktop\WindowsSocketHelloWorld\Client_Kuo\Client_Kuo.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
-         Touching "Debug\Client_Kuo.unsuccessfulbuild".
+﻿Build started 2014/10/31 18:41:38.
+     1>Project "C:\Users\Chiang\Documents\GitHub\WindowsSocket2HelloWorld\Client_Kuo\Client_Kuo.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\Client_Kuo.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\Client_Kuo.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt client.cpp "tcp-client.cpp" "tcp-exception.cpp"
+         tcp-exception.cpp
+         tcp-client.cpp
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\client_kuo\tcp-client.h(10): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\client_kuo\tcp-client.h(11): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\client_kuo\tcp-client.h(12): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\client_kuo\tcp-client.h(13): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\client_kuo\tcp-client.cpp(10): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\client_kuo\tcp-client.cpp(15): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\client_kuo\tcp-client.cpp(28): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\client_kuo\tcp-client.cpp(36): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         client.cpp
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\client_kuo\tcp-client.h(10): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\client_kuo\tcp-client.h(11): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\client_kuo\tcp-client.h(12): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\client_kuo\tcp-client.h(13): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\client_kuo\client.cpp(13): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(277) : see declaration of 'gets'
+         Generating Code...
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Shu\Desktop\WindowsSocketHelloWorld\Debug\Client_Kuo.exe" /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Client_Kuo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Shu\Desktop\WindowsSocketHelloWorld\Debug\Client_Kuo.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Shu\Desktop\WindowsSocketHelloWorld\Debug\Client_Kuo.lib" /MACHINE:X86 Debug\client.obj
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Chiang\Documents\GitHub\WindowsSocket2HelloWorld\Debug\Client_Kuo.exe" /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Client_Kuo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Chiang\Documents\GitHub\WindowsSocket2HelloWorld\Debug\Client_Kuo.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Chiang\Documents\GitHub\WindowsSocket2HelloWorld\Debug\Client_Kuo.lib" /MACHINE:X86 Debug\client.obj
          "Debug\tcp-client.obj"
          "Debug\tcp-exception.obj"
-         Client_Kuo.vcxproj -> C:\Users\Shu\Desktop\WindowsSocketHelloWorld\Debug\Client_Kuo.exe
+         Client_Kuo.vcxproj -> C:\Users\Chiang\Documents\GitHub\WindowsSocket2HelloWorld\Debug\Client_Kuo.exe
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Shu\Desktop\WindowsSocketHelloWorld\Debug\Client_Kuo.exe;#1" /manifest Debug\Client_Kuo.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Chiang\Documents\GitHub\WindowsSocket2HelloWorld\Debug\Client_Kuo.exe;#1" /manifest Debug\Client_Kuo.exe.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "Debug\Client_Kuo.unsuccessfulbuild".
          Touching "Debug\Client_Kuo.lastbuildstate".
-     1>Done Building Project "C:\Users\Shu\Desktop\WindowsSocketHelloWorld\Client_Kuo\Client_Kuo.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\Chiang\Documents\GitHub\WindowsSocket2HelloWorld\Client_Kuo\Client_Kuo.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.92
+Time Elapsed 00:00:05.38

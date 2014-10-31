@@ -4,6 +4,25 @@
 
 using namespace std;
 
+class message {
+public:
+	std::string getMessage() const;
+
+protected:
+	std::string messageToSend;
+	virtual void makeMessage() = 0;
+
+	friend class TCPStream;
+};
+
+class testMessage : public message {
+public:
+	std::string blabla;
+
+protected:
+	virtual void makeMessage();
+};
+
 class TCPStream {
 	int		socketDescriptor;
 	string	peerIP;
@@ -12,8 +31,8 @@ class TCPStream {
 public:
 	~TCPStream();
 
-	size_t send(char* buffer, size_t len);
-	size_t receive(char* buffer, size_t len);
+	void		send(message& dataToSend);
+	std::string receive();
  
 	string getPeerIP()	{ return peerIP; }
 	int getPeerPort()	{ return peerPort; }
@@ -26,3 +45,4 @@ private:
 	friend class TCPAcceptor;
 	friend class TCPConnector;
 };
+

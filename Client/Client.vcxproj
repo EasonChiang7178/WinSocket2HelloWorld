@@ -63,13 +63,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="TCPClient.cpp" />
     <ClCompile Include="TCPConnector.cpp" />
     <ClCompile Include="TCPStream.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TCPAcceptor.h" />
-    <ClInclude Include="TCPClient.h" />
     <ClInclude Include="TCPConnector.h" />
     <ClInclude Include="TCPStream.h" />
   </ItemGroup>

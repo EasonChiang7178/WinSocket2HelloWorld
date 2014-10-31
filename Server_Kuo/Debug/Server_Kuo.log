@@ -1,39 +1,41 @@
-﻿Build started 2014/10/30 下午 11:53:43.
-     1>Project "C:\Users\Shu\Desktop\WindowsSocketHelloWorld\Server_Kuo\Server_Kuo.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
+﻿Build started 2014/10/31 18:41:38.
+     1>Project "C:\Users\Chiang\Documents\GitHub\WindowsSocket2HelloWorld\Server_Kuo\Server_Kuo.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\Server_Kuo.lastbuildstate".
+       InitializeBuildStatus:
          Creating "Debug\Server_Kuo.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt server.cpp "tcp-exception.cpp" "tcp-server.cpp"
          tcp-server.cpp
-     1>c:\users\shu\desktop\windowssockethelloworld\server_kuo\tcp-server.h(10): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\shu\desktop\windowssockethelloworld\server_kuo\tcp-server.h(11): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\shu\desktop\windowssockethelloworld\server_kuo\tcp-server.h(12): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\shu\desktop\windowssockethelloworld\server_kuo\tcp-server.h(13): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\shu\desktop\windowssockethelloworld\server_kuo\tcp-server.cpp(7): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\shu\desktop\windowssockethelloworld\server_kuo\tcp-server.cpp(22): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\shu\desktop\windowssockethelloworld\server_kuo\tcp-server.cpp(29): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\shu\desktop\windowssockethelloworld\server_kuo\tcp-server.cpp(37): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\server_kuo\tcp-server.h(10): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\server_kuo\tcp-server.h(11): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\server_kuo\tcp-server.h(12): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\server_kuo\tcp-server.h(13): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\server_kuo\tcp-server.cpp(7): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\server_kuo\tcp-server.cpp(22): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\server_kuo\tcp-server.cpp(29): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\server_kuo\tcp-server.cpp(37): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
          tcp-exception.cpp
          server.cpp
-     1>c:\users\shu\desktop\windowssockethelloworld\server_kuo\tcp-server.h(10): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\shu\desktop\windowssockethelloworld\server_kuo\tcp-server.h(11): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\shu\desktop\windowssockethelloworld\server_kuo\tcp-server.h(12): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\shu\desktop\windowssockethelloworld\server_kuo\tcp-server.h(13): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\shu\desktop\windowssockethelloworld\server_kuo\server.cpp(16): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\server_kuo\tcp-server.h(10): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\server_kuo\tcp-server.h(11): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\server_kuo\tcp-server.h(12): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\server_kuo\tcp-server.h(13): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\chiang\documents\github\windowssocket2helloworld\server_kuo\server.cpp(16): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(277) : see declaration of 'gets'
          Generating Code...
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Shu\Desktop\WindowsSocketHelloWorld\Debug\Server_Kuo.exe" /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Server_Kuo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Shu\Desktop\WindowsSocketHelloWorld\Debug\Server_Kuo.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Shu\Desktop\WindowsSocketHelloWorld\Debug\Server_Kuo.lib" /MACHINE:X86 Debug\server.obj
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Chiang\Documents\GitHub\WindowsSocket2HelloWorld\Debug\Server_Kuo.exe" /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Server_Kuo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Chiang\Documents\GitHub\WindowsSocket2HelloWorld\Debug\Server_Kuo.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Chiang\Documents\GitHub\WindowsSocket2HelloWorld\Debug\Server_Kuo.lib" /MACHINE:X86 Debug\server.obj
          "Debug\tcp-exception.obj"
          "Debug\tcp-server.obj"
-         Server_Kuo.vcxproj -> C:\Users\Shu\Desktop\WindowsSocketHelloWorld\Debug\Server_Kuo.exe
+         Server_Kuo.vcxproj -> C:\Users\Chiang\Documents\GitHub\WindowsSocket2HelloWorld\Debug\Server_Kuo.exe
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Shu\Desktop\WindowsSocketHelloWorld\Debug\Server_Kuo.exe;#1" /manifest Debug\Server_Kuo.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Chiang\Documents\GitHub\WindowsSocket2HelloWorld\Debug\Server_Kuo.exe;#1" /manifest Debug\Server_Kuo.exe.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "Debug\Server_Kuo.unsuccessfulbuild".
          Touching "Debug\Server_Kuo.lastbuildstate".
-     1>Done Building Project "C:\Users\Shu\Desktop\WindowsSocketHelloWorld\Server_Kuo\Server_Kuo.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\Chiang\Documents\GitHub\WindowsSocket2HelloWorld\Server_Kuo\Server_Kuo.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.27
+Time Elapsed 00:00:05.49
