@@ -20,21 +20,36 @@ TCPStream::~TCPStream() {
 	WSACleanup();
 }
 
-void TCPStream::send(message& dataToSend) {
-	dataToSend.makeMessage();
-	if (::send(socketDescriptor, dataToSend.getMessage().c_str(), dataToSend.getMessage().size() + 1, 0) == SOCKET_ERROR)
-//----
-	;
-//----
+const bool TCPStream::send(message& datumToSend, const unsigned int delayTime) {
+	datumToSend.makeMessage();
+
+	int iResult = ::send(socketDescriptor, datumToSend.getMessage().c_str(), datumToSend.getMessage().size() + 1, 0);
+	if (iResult == SOCKET_ERROR) {
+		throw ExecuteWinSocketFailed("Send Failed!", iResult);
+		return false;
+	}
+
+	Sleep(delayTime);
+	return true;
+}
+
+const bool TCPStream::send(const unsigned int delayTime) {
+	if (data.size() == 0)
+		return false;
+
+	for (auto datumToSend = data.begin(); datumToSend != data.end(); datumToSend++)
+		send(**datumToSend, delayTime);
+
+	return true;
 }
 
 std::string TCPStream::receive() {
 	const size_t messageSize = 256;
 	char messageRecived[messageSize];
 
-	if (::recv(socketDescriptor, messageRecived, messageSize, 0) == 0)
-//----
-	;
-//----
+	int iResult = ::recv(socketDescriptor, messageRecived, messageSize, 0);
+	if (iResult == 0 || iResult == SOCKET_ERROR)
+		throw ExecuteWinSocketFailed("Recive Failed!", iResult);
+
 	return std::string(messageRecived);
 }

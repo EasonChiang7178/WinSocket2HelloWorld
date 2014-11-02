@@ -7,7 +7,7 @@
 TCPServer::TCPServer(int port)throw(TCPException){
     struct sockaddr_in serv;
     WSADATA wsadata;
-    if(WSAStartup(0x101,(LPWSADATA)&wsadata)!=0)
+    if(WSAStartup(MAKEWORD(2,2), &wsadata)!=0)
       throw TCPException("err: can't use WinSock DLL");
     if((d_sd=socket(AF_INET, SOCK_STREAM, 0)) == (unsigned)SOCKET_ERROR)
       throw TCPException("err: can't open TCP socket");

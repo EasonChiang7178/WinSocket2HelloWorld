@@ -62,11 +62,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Exceptions.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="TCPConnector.cpp" />
     <ClCompile Include="TCPStream.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Exceptions.h" />
     <ClInclude Include="TCPConnector.h" />
     <ClInclude Include="TCPStream.h" />
   </ItemGroup>

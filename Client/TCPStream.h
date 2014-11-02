@@ -2,6 +2,10 @@
 #include <ws2tcpip.h>
 #include <string>
 
+#include <vector>
+
+#include "Exceptions.h"
+
 using namespace std;
 
 class message {
@@ -28,10 +32,17 @@ class TCPStream {
 	string	peerIP;
 	int		peerPort;
 
+	std::vector< message* > data;
+
 public:
 	~TCPStream();
 
-	void		send(message& dataToSend);
+	template< typename Container >
+	const bool	addMessages(Container& dataToSend);
+
+	const bool	send(message& datumToSend, const unsigned int delayTime = 5);
+	const bool	send(const unsigned int delayTime = 1);
+
 	std::string receive();
  
 	string getPeerIP()	{ return peerIP; }
@@ -40,9 +51,18 @@ public:
 private:
 	TCPStream();
 	TCPStream(int socketdescriptor, SOCKADDR_IN* address);
-	TCPStream(const TCPStream& stream);
 
 	friend class TCPAcceptor;
 	friend class TCPConnector;
 };
 
+template< typename Container >
+const bool TCPStream::addMessages(Container& dataToSend) {
+	data.clear();
+	data.resize(0);
+
+	for (auto elementIter = dataToSend.begin(); elementIter != dataToSend.end(); elementIter++)
+		data.push_back(&*elementIter);
+
+	return true;
+}

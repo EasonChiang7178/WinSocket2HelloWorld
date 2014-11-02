@@ -1,14 +1,16 @@
 #include "TCPConnector.h"
 
-TCPStream& TCPConnector::Connect(const int port, const std::string server) {
+TCPConnector::TCPConnector()
+	: ports(0), IPAddresses(0)
+{}
+
+TCPStream& TCPConnector::connect(const int port, const std::string server) {
 	/* Initialize Winsock */
 	WSADATA wsaData;
 	int iResult = WSAStartup(MAKEWORD(2,2), &wsaData);
-//---
-	if (iResult != 0) {
-		printf("WSAStartup failed with error: %d\n", iResult);
-	}
-//---
+
+	if (iResult != 0)
+		throw ExecuteWinSocketFailed("WSAStartup failed!", iResult);
 
 	/* Interpret DNS host name to IP address */
 	SOCKADDR_IN serverAddress;
@@ -21,16 +23,37 @@ TCPStream& TCPConnector::Connect(const int port, const std::string server) {
 
 	SOCKET socketDescriptor = INVALID_SOCKET;
 	socketDescriptor = socket(AF_INET, SOCK_STREAM, 0);
-//---
-	if (socketDescriptor== INVALID_SOCKET) {
-	}
-//---
 
-	if (::connect(socketDescriptor, (SOCKADDR*) &serverAddress, sizeof(serverAddress)) != 0) {
-//---
-//---
-	}
-	return TCPStream(socketDescriptor, &serverAddress);
+	if (socketDescriptor == INVALID_SOCKET)
+		throw CreateSocketFailed();
+
+	iResult = ::connect(socketDescriptor, (SOCKADDR*) &serverAddress, sizeof(serverAddress));
+	if (iResult == SOCKET_ERROR)
+		throw ExecuteWinSocketFailed("Connect to server failed!", iResult);
+
+	TCPStream* tcpStream = new TCPStream(socketDescriptor, &serverAddress);
+	return *tcpStream;
+}
+
+std::vector< TCPStream >& TCPConnector::connectAll() {
+	std::vector< TCPStream >* connections = new std::vector< TCPStream >();
+	for (size_t index = 0; index < IPAddresses.size(); index++)
+		connections->push_back(connect(ports[index], IPAddresses[index]));
+
+	return *connections;
+}
+
+void TCPConnector::addConnection(const int port, const std::string IPAddress) {
+	ports.push_back(static_cast< unsigned int >(port));
+	IPAddresses.push_back(IPAddress);
+}
+
+void TCPConnector::clearAddressesContainer() {
+	ports.clear();
+	ports.resize(0);
+
+	IPAddresses.clear();
+	IPAddresses.resize(0);
 }
 
 int TCPConnector::interpretHostName(const std::string hostName, IN_ADDR* address_info) {
