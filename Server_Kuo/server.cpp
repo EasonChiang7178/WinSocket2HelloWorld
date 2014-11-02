@@ -11,20 +11,16 @@ int main(int argc, char *argv[]){
 	  //TCPServer server3(7881);
       cout << "wait for client" << endl;
 	  server.accept();
-	  server.accept();
-	  server.accept();
-	  server.accept();
-	  server.accept();
 	  cout << "connected 1" << endl;
 	  //server2.accept();
-      cout << "connected 2" << endl;
+      //cout << "connected 2" << endl;
 	  //server3.accept();
-	  cout << "connected 3" << endl;
+	  //cout << "connected 3" << endl;
       while(true){
 		//cout << server2.read() << endl;
-		printf("read 3\n");
+		//printf("read 3\n");
         //cout << server2.read() << endl;
-		printf("read 2\n");
+		//printf("read 2\n");
 		cout << server.read() << endl;
 		printf("read 1\n");
         //printf("> ");

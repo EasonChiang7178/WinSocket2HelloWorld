@@ -1,4 +1,4 @@
-﻿Build started 2014/11/2 下午 02:58:56.
+﻿Build started 2014/11/3 上午 02:26:24.
      1>Project "F:\Dropbox\Shu\Program\GitHub\WinSocket2HelloWorld\Server_Kuo\Server_Kuo.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Server_Kuo.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -14,4 +14,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.06
+Time Elapsed 00:00:00.05
