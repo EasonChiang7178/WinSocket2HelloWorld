@@ -9,9 +9,13 @@ using namespace std;
 int main(int argc, char** argv) {
 	TCPConnector connector;
 	//TCPStream stream = connector.connect(1234, "127.0.0.1");
-	//connector.addConnection(7878, "127.0.0.1");
+	connector.addConnection(7878, "127.0.0.1");
+	connector.addConnection(7878, "127.0.0.1");
+	connector.addConnection(7878, "127.0.0.1");
+	connector.addConnection(7878, "127.0.0.1");
+	connector.addConnection(7878, "127.0.0.1");
 	//connector.addConnection(7879, "127.0.0.1");
-	connector.addConnection(7881, "127.0.0.1");
+	//connector.addConnection(7881, "127.0.0.1");
 
 	vector< TCPStream > streams = connector.connectAll();
 

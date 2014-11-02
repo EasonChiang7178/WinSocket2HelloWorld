@@ -11,6 +11,10 @@ int main(int argc, char *argv[]){
 	  //TCPServer server3(7881);
       cout << "wait for client" << endl;
 	  server.accept();
+	  server.accept();
+	  server.accept();
+	  server.accept();
+	  server.accept();
 	  cout << "connected 1" << endl;
 	  //server2.accept();
       cout << "connected 2" << endl;

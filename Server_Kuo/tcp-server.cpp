@@ -16,7 +16,7 @@ TCPServer::TCPServer(int port)throw(TCPException){
     serv.sin_port        = htons(port);
     if(bind(d_sd, (LPSOCKADDR)&serv, sizeof(serv)) < 0)
       throw TCPException("err: can't bind local address");
-    if(listen(d_sd,1) < 0)
+    if(listen(d_sd, SOMAXCONN) < 0)
       throw TCPException("err: listen() error");
 }
 void TCPServer::accept()throw(TCPException){

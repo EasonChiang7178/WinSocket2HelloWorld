@@ -1,4 +1,4 @@
-﻿Build started 2014/11/2 下午 02:20:55.
+﻿Build started 2014/11/2 下午 02:55:53.
      1>Project "F:\Dropbox\Shu\Program\GitHub\WinSocket2HelloWorld\Client\Client.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Client.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -21,4 +21,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.23
+Time Elapsed 00:00:01.29
